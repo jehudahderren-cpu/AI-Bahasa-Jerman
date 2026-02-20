@@ -12,7 +12,7 @@ except:
     st.error("API Key tidak ditemukan di Secrets! Pastikan konfigurasi sudah benar.")
     st.stop()
 
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 # --- SISTEM PENYIMPANAN SESSION ---
 if "all_chats" not in st.session_state:
